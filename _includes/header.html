@@ -10,7 +10,14 @@
 		</a>
 		{% endif %}
 		<h1 class="site-title">
-			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+			{% assign hour = site.time | date: "%H" | plus: 0 %}
+			{% if hour < 12 %}
+				<a href="{{ site.baseurl }}/">Hi, Good morning</a>
+			{% elsif hour < 18 %}
+			<a href="{{ site.baseurl }}/">Hi, Good afternoon</a>
+			{% elsif hour >= 18 %}
+			<a href="{{ site.baseurl }}/">Hi, Good evening</a>
+			{% endif %}			
 		</h1>
 	</div>
 	<nav class="site-nav">
