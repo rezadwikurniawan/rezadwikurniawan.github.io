@@ -24,6 +24,7 @@
     display: inline-block;
     background-size: $feature-image-size;
     border-bottom: 1px solid $border-color;
+    padding: 5% 32%;
     p a {
       @extend .body-link;
     }
