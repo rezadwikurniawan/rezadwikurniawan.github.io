@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/blog"
+baseurl: ""
 url: "https://rezadwikurniawan.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
